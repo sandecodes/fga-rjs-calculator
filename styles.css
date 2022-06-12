@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  flex-basis: 25%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #effffd;
+  background: -webkit-linear-gradient(top, #effffd, #ddd);
+  cursor: pointer;
+}
+
+.display {
+  color: white;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #42c2ff;
+  border: 1px solid #effffd;
+  font-size: 1.2rem;
+}
+
+.operator,
+.equals {
+  background: #85f4ff;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 25px;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.flex-container-column p {
+  padding-top: 12px;
+  text-align: justify;
+}
+
+.flex-container-column img {
+  border-radius: 50%;
+  width: 30px;
+  text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+  .button {
+    padding: 17px;
+    width: 25%;
+    height: 10vh;
+  }
+}
